@@ -10,14 +10,38 @@ function Collection() {
       style={{backgroundImage:`url(${Landscape1})`}}
     >
       <div className="container">
-        <div className="topBar">
-          <div className="time">
-
+        <nav className="topBar">
+          <div className="topItems">
+            <div className="topContent">
+              {/*Project Name or Logo*/}
+            </div>
+            <div className="topContent">
+              {/*Profile pic with name*/}
+            </div>
+            <div className="topContent">
+              {/*Date and Time*/}
+            </div>
           </div>
-          <div className="date">
+        </nav>
+        <main className="bottomBars">
+          <div className="bottomItems">
+            <div className="left">
+              <div className="leftItems">
+                <div className="leftContent">
+                  {/*Our Pictures slideshow w/ show all button*/}
+                </div>
+                <div className="leftContent">
+                  {/*Qr Generate*/}
+                </div>
+              </div>
+            </div>
+            <div className="right">
+              
+            </div>
+          </div>
             
-          </div>
-        </div>
+        </main>
+          
         
         <div className="toDo">
 
