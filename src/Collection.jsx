@@ -27,19 +27,44 @@ function Collection() {
           <div className="bottomItems">
             <div className="left">
               <div className="leftItems">
-                <div className="leftContent">
-                  {/*Our Pictures slideshow w/ show all button*/}
+                <div className="leftTop">
+                  <div className="ourPictures">
+                    {/*Our Pictures slideshow w/ show all button*/}
+                  </div>
                 </div>
-                <div className="leftContent">
-                  {/*Qr Generate*/}
+                <div className="leftBottom">
+                  <div className="quoteSection">
+                    {/*Quote Section*/}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="middle">
+              <div className="middleItems">
+                <div className="tools">
+
+                </div>
+                <div className="coupleSection">
+                  <div className="rsInfo">
+
+                  </div>
+                  <div className="widgets">
+                    
+                  </div>
                 </div>
               </div>
             </div>
             <div className="right">
-              
+              <div className="rightItems">
+                <div className="cathSocials">
+                  {/*Social Media ni cath*/}
+                </div>
+                <div className="kyleSocials">
+                  {/*Social Media ni Kyle*/}
+                </div>
+              </div>
             </div>
           </div>
-            
         </main>
           
         

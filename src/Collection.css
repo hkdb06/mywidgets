@@ -66,18 +66,88 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 6px;
 }
 
 .left{
-    background-color: azure;
+    display: flex;
     width: 200px;
     height: 100%;
 }
 
-.right{
-    background-color: brown;
+.leftItems{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.leftTop{
+    display: flex;
+    background: rgb(213, 0, 0);
+    width: 100%;
+    height: 300px;
+}
+
+.leftBottom{
+    display: flex;
+    background: rgb(213, 0, 0);
+    width: 100%;
+    flex: 1;
+}
+
+.middle{
+    background-color: rgb(255, 43, 99);
     width: 100%;
     height: 100%;
     flex: 1;
 }
 
+.middleItems{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.tools{
+    background-color: blueviolet;
+    width: 100%;
+    height: 150px;
+}
+
+.coupleSection{
+    background-color: blue;
+    width: 100%;
+    flex: 1;
+}
+
+.right{
+    background-color: coral;
+    width: 150px;
+    height: 100%;
+}
+
+.rightItems{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.cathSocials{
+    background-color: rgb(213, 0, 0);
+    width: 100%;
+    height: 50%;
+}
+
+.kyleSocials{
+    background-color: rgb(213, 0, 0);
+    width: 100%;
+    height: 50%;
+}
