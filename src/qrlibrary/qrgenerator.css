@@ -1,0 +1,14 @@
+.qrContainer{
+    background-color: wheat;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.qrInput{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+

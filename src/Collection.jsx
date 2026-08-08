@@ -3,7 +3,7 @@ import './Collection.css'
 import Landscape1 from "./assets/Landscape1.png"
 
 function Collection() {
-
+  const [qrImage, setQrImage] = useState("");
   return (
     <div 
       className="background"
@@ -42,11 +42,10 @@ function Collection() {
             <div className="middle">
               <div className="middleItems">
                 <div className="tools">
-
                 </div>
                 <div className="coupleSection">
                   <div className="rsInfo">
-
+                    
                   </div>
                   <div className="widgets">
                     
@@ -66,20 +65,6 @@ function Collection() {
             </div>
           </div>
         </main>
-          
-        
-        <div className="toDo">
-
-        </div>
-        <div className="weather">
-
-        </div>
-        <div className="calendar">
-
-        </div>
-        <div className="qrGenerate">
-
-        </div>
       </div>
     </div>
   )
