@@ -1,0 +1,57 @@
+.bothPfp{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.cathPfp{
+    display: flex;
+    gap: 10px;
+}
+
+.cathName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cathPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cathPfp img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    outline: 1.5px solid white;
+}
+
+.kylePfp{
+    display: flex;
+    gap: 10px;
+
+}
+
+.kylePic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kylePfp img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    outline: 1.5px solid white;
+}
+
+.kyleName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

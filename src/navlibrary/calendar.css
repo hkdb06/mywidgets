@@ -1,0 +1,50 @@
+.hero{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCalendar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+}
+
+.dateDay, .monthYear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.dateDay{
+    background: #080808a8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 6px;
+}
+
+.dateDay p{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.monthYear{
+    background: #ffffffa8;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    width: 80px;
+    padding: 6px;
+}
+
+.monthYear p{
+    color: black;
+    font-size: 10px;
+    font-weight: 600;
+}

@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import './Collection.css'
+import Qrgenerator from "./qrlibrary/qrgenerator"
+import Logo from "./navlibrary/logo.jsx"
+import Pfp from "./navlibrary/pfp"
+import Calendar from "./navlibrary/calendar.jsx"
 import Landscape1 from "./assets/Landscape1.png"
 
 function Collection() {
@@ -12,14 +16,24 @@ function Collection() {
       <div className="container">
         <nav className="topBar">
           <div className="topItems">
-            <div className="topContent">
+            <div className="topLogo">
               {/*Project Name or Logo*/}
+              <Logo/>
             </div>
-            <div className="topContent">
+            <div className="topPfp">
               {/*Profile pic with name*/}
+              <Pfp/>
             </div>
             <div className="topContent">
               {/*Date and Time*/}
+              <div className="clock">
+                <p>
+                  clock
+                </p>
+              </div>
+              <div className="calendar">
+                <Calendar/>
+              </div>
             </div>
           </div>
         </nav>
