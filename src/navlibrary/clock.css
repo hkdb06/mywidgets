@@ -1,0 +1,26 @@
+.mainClock{
+    display: flex;
+    
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.clockAdjust{
+    display: flex;
+    flex-direction: column;
+}
+
+.time, .timeIndicate{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.time p{
+    font-size: 12px;
+}
+
+.timeIndicate p{
+    font-size: 10px;
+}

@@ -1,11 +1,10 @@
-import Collection from "./Collection"
+import Collection from "./Collection.jsx"
 
 function App() {
-
   return (
-    <>
+    <div>
       <Collection/>
-    </>
+    </div>
   )
 }
 

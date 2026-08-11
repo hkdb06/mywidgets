@@ -3,11 +3,11 @@ import './Collection.css'
 import Qrgenerator from "./qrlibrary/qrgenerator"
 import Logo from "./navlibrary/logo.jsx"
 import Pfp from "./navlibrary/pfp"
+import Clock from "./navlibrary/clock.jsx"
 import Calendar from "./navlibrary/calendar.jsx"
 import Landscape1 from "./assets/Landscape1.png"
 
 function Collection() {
-  const [qrImage, setQrImage] = useState("");
   return (
     <div 
       className="background"
@@ -27,9 +27,7 @@ function Collection() {
             <div className="topContent">
               {/*Date and Time*/}
               <div className="clock">
-                <p>
-                  clock
-                </p>
+                <Clock/>
               </div>
               <div className="calendar">
                 <Calendar/>

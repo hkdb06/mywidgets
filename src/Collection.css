@@ -47,6 +47,7 @@
 }
 
 .topContent{
+
     display: flex;
     justify-content: flex-end;
     width: 200px;
@@ -56,10 +57,9 @@
 
 .clock{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background-color: aliceblue;
-    width: 50px;
+    width: 600px;
     height: 100%;
 }
 

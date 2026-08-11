@@ -1,37 +1,51 @@
 import "./calendar.css"
 
 function Calendar() {
-    const date = document.getElementById("date");
-    const day = document.getElementById("day");
-    const month = document.getElementById("month");
-    const year = document.getElementById("year");
-
     const today = new Date();
+    console.log(today);
 
-    const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"];
-    const allMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const weekDays = [
+        "Sunday", 
+        "Monday", 
+        "Tuesday", 
+        "Wednesday", 
+        "Thurday", 
+        "Friday", 
+        "Saturday"
+    ];
+    const allMonths = [
+        "January", 
+        "February", 
+        "March", 
+        "April", 
+        "May", 
+        "June", 
+        "July", 
+        "August", 
+        "September", 
+        "October", 
+        "November", 
+        "December"
+    ];
 
-    date.innerHTML = (today.getDate()<10?"0":"") + today.getDate();
-    day.innerHTML = weekDays[today.getDay()];
-    month.innerHTML = allMonths[today.getMonth()];
-    year.innerHTML = today.getFullYear();
     return(
-        <div class="hero">
-            <div class="mainCalendar">
-                <div class="dateDay">
+        <div className="hero">
+            <div className="mainCalendar">
+                <div className="dateDay">
                     <p id="date">
-                        02
+                        {today.getDate() < 10 ? "0" : ""}
+                        {today.getDate()}
                     </p>
                     <p id="day">
-                        Sunday
+                        {weekDays[today.getDay()]}
                     </p>
                 </div>
-                <div class="monthYear">
+                <div className="monthYear">
                     <p id="month">
-                        September    
+                        {allMonths[today.getMonth()]}    
                     </p>
                     <p id="year">
-                        2026
+                        {today.getFullYear()}
                     </p>
                 </div>
             </div>
