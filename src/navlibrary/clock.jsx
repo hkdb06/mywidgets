@@ -27,6 +27,10 @@ function Clock(){
         ? timeIndicates[0] 
         : timeIndicates[1]
 
+    setInterval(() => {
+        console.log(new Date());
+    }, 1000);
+
     return(
         <div className="mainClock">
             <div className="clockAdjust">
