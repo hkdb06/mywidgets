@@ -1,22 +1,37 @@
 import "./clock.css"
+import { useEffect, useState } from "react";
 
 function Clock(){
-    const time = new Date();
-    
+
+    {/* dito na nakastore yung exact time*/}
+    const [time, setTime] = useState(new Date());
+
+    {/*runs when component appears */}
+    useEffect (() => {
+
+        {/*every 1 sec*/}
+        const interval = setInterval(() => {
+            setTime(new Date());
+        }, 1000);
+
+        {/*tigil yung timer kapag yung Clock ay removed*/}
+        return () => clearInterval(interval);
+    }, [])
+
     const hour = time.getHours();
     const minute = time.getMinutes();
 
     const midnight = hour === 0
         ? hour + 12
-        :  hour
+        :  hour;
 
     const nonMilitaryHour = hour > 12 
         ? hour - 12 
-        : hour
+        : hour;
     
-    const realTime = nonMilitaryHour === 0
+    const realHour = nonMilitaryHour === 0
         ? midnight
-        : nonMilitaryHour
+        : nonMilitaryHour;
 
     const timeIndicates = [
         "AM",
@@ -25,18 +40,14 @@ function Clock(){
 
     const timeIndicator = time.getHours() < 12
         ? timeIndicates[0] 
-        : timeIndicates[1]
-
-    setInterval(() => {
-        console.log(new Date());
-    }, 1000);
+        : timeIndicates[1];
 
     return(
         <div className="mainClock">
             <div className="clockAdjust">
                 <div className="time">
                     <p>
-                        {realTime}:{minute < 10 ? "0" + minute: minute}
+                        {realHour}:{minute < 10 ? "0" + minute: minute}
                     </p>
                 </div>
                 <div className="timeIndicate">
